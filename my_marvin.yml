@@ -33,6 +33,8 @@ jenkins:
           permissions:
           - "Job/Build"
           - "Job/Workspace"
+          - "Job/Read"
+          - "Overall/Read"
         - name: "assist"
           description: "Assistant"
           assignments:
@@ -40,6 +42,7 @@ jenkins:
           permissions:
           - "Job/Read"
           - "Job/Workspace"
+          - "Overall/Read"
         - name: "gorilla"
           description: "Group Obsessively Researching Innovation Linked to Learning and Accomplishment"
           assignments:
@@ -52,5 +55,7 @@ jenkins:
           - "Job/Create"
           - "Job/Configure"
           - "Job/Workspace"
+          - "Overall/Read"
+          - "Job/Read"
 jobs:
   - file: /var/jenkins_home/job_dsl.groovy

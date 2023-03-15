@@ -39,7 +39,7 @@ freeStyleJob('/Tools/SEED') {
 				steps {
 					shell("make fclean")
 					shell("make")
-					shell("make test")
+					shell("make tests_run")
 					shell("make clean")
 				}
 			}'''.stripIndent())
